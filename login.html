@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+<body>
+    <input type="password" id="pass" placeholder="Пароль">
+    <button onclick="login()">Войти</button>
+
+    <script>
+        const API = "https://employment-stripes-screening-compression.trycloudflare.com"
+
+        function login(){
+        fetch(API + "/admin/login", {
+            method: "POST",
+            headers: {"Content-Type":"application/json"},
+            body: JSON.stringify({
+            password: document.getElementById("pass").value
+            })
+        })
+        .then(r => r.json())
+        .then(d => {
+            if (d.token){
+            localStorage.setItem("adminToken", d.token)
+            window.location.replace("index.html")
+            } else {
+            alert("Неверный пароль")
+            }
+        });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.rubik-spray-paint-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+  font-family: "Pacifico", serif;
+  margin: 0;
+}
+header div{
+  font-size: min(3.74288vh, 1.5748vw);
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  align-items: center;
+  margin-left: min(6.23814vh, 2.62467vw);
+  margin-right: min(6.23814vh, 2.62467vw);
+}
+header div h1{
+  margin: 0;
+}
+header div h2{
+  margin-bottom: 0;
+  margin-top: min(3.74288vh, 1.5748vw);
+}
+header{
+  display: flex;
+  justify-content: center;
+}
+header div #t{
+  color: red;
+  position: absolute;
+  top: min(6.86196vh, 2.88713vw);
+  left: 59.05511vw;
+  font-family: 'Times New Roman', Times, serif;
+  animation: adminT 3s ease-in-out infinite;
+}
+@keyframes adminT{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.imgK{
+  width: min(37.42888vh, 15.74803vw);;
+}
+#line{
+    width: min(60vw, 142.6076107298815vh);
+    height: min(0.2624671916010499vw, 0.6238303181534623vh);
+    background: rgb(99, 99, 99);
+    margin: auto;
+    margin-top: min(2.624671916010499vw, 6.238303181534623vh);
+    margin-bottom: min(2.624671916010499vw, 6.238303181534623vh);
+}
+main{
+    width: min(60vw, 142.6076107298815vh);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.story{
+    background: white;
+    border: min(0.2624671916010499vw, 0.6238303181534623vh) solid black;
+    min-width: min(7.874015748031496vw, 18.71490954460387vh);
+    height: min(3.674540682414698vw, 8.733624454148472vh);
+    border-radius: min(1.837270341207349vw, 4.366812227074236vh);
+    font-family: "Times New Roman", serif;
+    font-size: min(2.099737532808399vw, 4.990642545227698vh);
+    margin: min(0.5249343832020997vw, 1.247660636306925vh);
+}
+.add{
+    background: rgb(255, 255, 255);
+    border: min(0.2624671916010499vw, 0.6238303181534623vh) solid black;
+    width: min(3.674540682414698vw, 8.733624454148472vh);
+    height: min(3.674540682414698vw, 8.733624454148472vh);
+    border-radius: min(1.224846894138233vw, 2.911208151382824vh);
+    font-family: "Times New Roman", serif;
+    font-size: min(2.099737532808399vw, 4.990642545227698vh);
+    margin: min(0.5249343832020997vw, 1.247660636306925vh);
+}
+.x{
+    cursor: pointer;
+}
+#back{
+    position: absolute;
+    margin: auto;
+    transform: translateX(max(-36.74540682414698vw, -87.33624454148472vh));
+    width: min(11.81102362204724vw, 28.0723643169058vh);
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.rubik-spray-paint-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+  font-family: "Pacifico", serif;
+  margin: 0;
+  overflow: hidden;
+}
+header div{
+  font-size: min(3.74288vh, 1.5748vw);
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  align-items: center;
+  margin-left: min(6.23814vh, 2.62467vw);
+  margin-right: min(6.23814vh, 2.62467vw);
+}
+header div h1{
+  margin: 0;
+}
+header div h2{
+  margin-bottom: 0;
+  margin-top: min(3.74288vh, 1.5748vw);
+}
+header{
+  display: flex;
+  justify-content: center;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: min(6.23814vh, 2.62467vw);
+}
+main button{
+  width: min(71.30202vh, 30vw);
+  height: min(18.71442vh, 7.87401vw);
+  border: min(0.623814vh, 0.262467vw) solid black;
+  border-radius: min(18.71442vh, 7.87401vw);
+  background: rgb(255, 131, 131);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: min(2.49525900788502vh, 1.0498687664042vw);
+  margin-right: min(2.49525900788502vh, 1.0498687664042vw);
+}
+main button p{
+  font-family: "Pacifico", serif;
+  font-size: min(12.47629vh, 5.24934vw);
+  margin-top: min(6.23814vh, 2.62467vw);
+}
+footer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: min(12.47629vh, 5.24934vw);
+}
+footer input{
+  font-size: min(6.23814vh, 2.62467vw);
+  font-family: "Pacifico", serif;
+}
+#hr{
+  display: flex;
+  justify-content: center;
+  margin: min(3.74288vh, 1.5748vw);
+}
+#hr a{
+  font-size: min(2.49525900788502vh, 1.0498687664042vw);
+  position: relative;
+  top: max(-2.49525900788502vh, -1.0498687664042vw);
+}
+header div #t{
+  color: red;
+  position: absolute;
+  top: min(6.86196vh, 2.88713vw);
+  left: 59.05511vw;
+  font-family: 'Times New Roman', Times, serif;
+  animation: adminT 3s ease-in-out infinite;
+}
+@keyframes adminT{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.imgK{
+  width: min(37.42888vh, 15.74803vw);;
+}
+footer img{
+  height: min(22.45733vh, 9.44881vw);
+}
