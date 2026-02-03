@@ -3,7 +3,7 @@ if (!localStorage.getItem("adminToken")) {
 }
 let w = document.getElementById("winners")
 let ws = document.getElementById("winnersave")
-fetch("http://localhost:2000/fields/winners")
+fetch("https://employment-stripes-screening-compression.trycloudflare.com/fields/winners")
 .then(r => r.json())
 .then(data => {
     if ("text" in data){
@@ -14,7 +14,7 @@ fetch("http://localhost:2000/fields/winners")
 })
 ws.addEventListener("click", () => {
     let value = w.value
-    fetch("http://localhost:2000/fields/winners", {
+    fetch("https://employment-stripes-screening-compression.trycloudflare.com/fields/winners", {
         method: "PUT",
         headers: { "Content-Type": "application/json",
             "x-admin-token": localStorage.getItem("adminToken")

@@ -15,7 +15,7 @@ function isSaved(){
 save.addEventListener("click", () => {
     if(!isaved){
         isaved = true
-        fetch("http://localhost:2000/fields/soon", {
+        fetch("https://employment-stripes-screening-compression.trycloudflare.com/fields/soon", {
             method: "PUT",
             headers: { "Content-Type": "application/json",
                 "x-admin-token": localStorage.getItem("adminToken")
@@ -45,7 +45,7 @@ text.addEventListener("input", () => {
     isSaved()
 })
 
-fetch("http://localhost:2000/fields/soon")
+fetch("https://employment-stripes-screening-compression.trycloudflare.com/fields/soon")
 .then(r => r.json())
 .then(data => {
     if("message" in data){

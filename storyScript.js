@@ -47,7 +47,7 @@ saveb.addEventListener("click", () => {
     if (!isaved){
         isaved = true
         if (nam){
-            fetch(`http://localhost:2000/stories/${origi}/${nam}`, {
+            fetch(`https://employment-stripes-screening-compression.trycloudflare.com/stories/${origi}/${nam}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json; charset=utf-8",
                     "x-admin-token": localStorage.getItem("adminToken")
@@ -69,7 +69,7 @@ saveb.addEventListener("click", () => {
             })
         }
         else{
-            fetch(`http://localhost:2000/stories/${origi}`, {
+            fetch(`https://employment-stripes-screening-compression.trycloudflare.com/stories/${origi}`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json; charset=utf-8",
                     "x-admin-token": localStorage.getItem("adminToken")
@@ -98,7 +98,7 @@ back.addEventListener("click", () => {
 
 
 if (nam){
-    fetch(`http://localhost:2000/stories/${origi}/${nam}`)
+    fetch(`https://employment-stripes-screening-compression.trycloudflare.com/stories/${origi}/${nam}`)
     .then(r => r.json())
     .then(data => {
         if ("message" in data){

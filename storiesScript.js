@@ -4,7 +4,7 @@ const main = document.getElementById("main")
 const params = new URLSearchParams(window.location.search)
 const nam = params.get("name")
 const back = document.getElementById("back")
-fetch(`http://localhost:2000/stories/${nam}`)
+fetch(`https://employment-stripes-screening-compression.trycloudflare.com/stories/${nam}`)
 .then(r => r.json())
 .then(data => {
     if ('message' in data){
@@ -33,7 +33,7 @@ fetch(`http://localhost:2000/stories/${nam}`)
 
             if (!confirm(`Удалить "${element}"?`)) return
 
-            fetch(`http://localhost:2000/stories/${nam}/${encodeURIComponent(element)}`, {
+            fetch(`https://employment-stripes-screening-compression.trycloudflare.com/stories/${nam}/${encodeURIComponent(element)}`, {
             headers: {"x-admin-token": localStorage.getItem("adminToken")},
             method: "DELETE"
             })
