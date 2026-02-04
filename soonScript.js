@@ -15,7 +15,7 @@ function isSaved(){
 save.addEventListener("click", () => {
     if(!isaved){
         isaved = true
-        fetch("https://employment-stripes-screening-compression.trycloudflare.com/fields/soon", {
+        fetch("https://voluminous-nerte-sofaknight-5a685afe.koyeb.app/kolobok-serverAPI/fields/soon", {
             method: "PUT",
             headers: { "Content-Type": "application/json",
                 "x-admin-token": localStorage.getItem("adminToken")
@@ -45,7 +45,7 @@ text.addEventListener("input", () => {
     isSaved()
 })
 
-fetch("https://employment-stripes-screening-compression.trycloudflare.com/fields/soon")
+fetch("https://voluminous-nerte-sofaknight-5a685afe.koyeb.app/kolobok-serverAPI/fields/soon")
 .then(r => r.json())
 .then(data => {
     if("message" in data){
