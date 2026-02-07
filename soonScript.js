@@ -15,7 +15,7 @@ function isSaved(){
 save.addEventListener("click", () => {
     if(!isaved){
         isaved = true
-        fetch("https://voluminous-nerte-sofaknight-5a685afe.koyeb.app/kolobok-serverAPI/fields/soon", {
+        fetch("https://kolobok-server-production.up.railway.app/fields/soon", {
             method: "PUT",
             headers: { "Content-Type": "application/json",
                 "x-admin-token": localStorage.getItem("adminToken")
