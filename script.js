@@ -3,7 +3,7 @@ if (!localStorage.getItem("adminToken")) {
 }
 let w = document.getElementById("winners")
 let ws = document.getElementById("winnersave")
-fetch("https://voluminous-nerte-sofaknight-5a685afe.koyeb.app/kolobok-serverAPI/fields/winners")
+fetch("https://kolobok-server-production.up.railway.app/fields/winners")
 .then(r => r.json())
 .then(data => {
     if ("text" in data){
@@ -14,7 +14,7 @@ fetch("https://voluminous-nerte-sofaknight-5a685afe.koyeb.app/kolobok-serverAPI/
 })
 ws.addEventListener("click", () => {
     let value = w.value
-    fetch("https://voluminous-nerte-sofaknight-5a685afe.koyeb.app/kolobok-serverAPI/fields/winners", {
+    fetch("https://kolobok-server-production.up.railway.app/fields/winners", {
         method: "PUT",
         headers: { "Content-Type": "application/json",
             "x-admin-token": localStorage.getItem("adminToken")
