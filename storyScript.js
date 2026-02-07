@@ -47,7 +47,7 @@ saveb.addEventListener("click", () => {
     if (!isaved){
         isaved = true
         if (nam){
-            fetch(`https://voluminous-nerte-sofaknight-5a685afe.koyeb.app/kolobok-serverAPI/stories/${origi}/${nam}`, {
+            fetch(`https://kolobok-server-production.up.railway.app/stories/${origi}/${nam}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json; charset=utf-8",
                     "x-admin-token": localStorage.getItem("adminToken")
@@ -69,7 +69,7 @@ saveb.addEventListener("click", () => {
             })
         }
         else{
-            fetch(`https://voluminous-nerte-sofaknight-5a685afe.koyeb.app/kolobok-serverAPI/stories/${origi}`, {
+            fetch(`https://kolobok-server-production.up.railway.app/stories/${origi}`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json; charset=utf-8",
                     "x-admin-token": localStorage.getItem("adminToken")
@@ -98,7 +98,7 @@ back.addEventListener("click", () => {
 
 
 if (nam){
-    fetch(`https://voluminous-nerte-sofaknight-5a685afe.koyeb.app/kolobok-serverAPI/stories/${origi}/${nam}`)
+    fetch(`https://kolobok-server-production.up.railway.app/stories/${origi}/${nam}`)
     .then(r => r.json())
     .then(data => {
         if ("message" in data){
