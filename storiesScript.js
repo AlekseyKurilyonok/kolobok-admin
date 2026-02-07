@@ -4,7 +4,7 @@ const main = document.getElementById("main")
 const params = new URLSearchParams(window.location.search)
 const nam = params.get("name")
 const back = document.getElementById("back")
-fetch(`https://voluminous-nerte-sofaknight-5a685afe.koyeb.app/kolobok-serverAPI/stories/${nam}`)
+fetch(`https://kolobok-server-production.up.railway.app/stories/${nam}`)
 .then(r => r.json())
 .then(data => {
     if ('message' in data){
@@ -33,7 +33,7 @@ fetch(`https://voluminous-nerte-sofaknight-5a685afe.koyeb.app/kolobok-serverAPI/
 
             if (!confirm(`Удалить "${element}"?`)) return
 
-            fetch(`https://voluminous-nerte-sofaknight-5a685afe.koyeb.app/kolobok-serverAPI/stories/${nam}/${encodeURIComponent(element)}`, {
+            fetch(`https://kolobok-server-production.up.railway.app/stories/${nam}/${encodeURIComponent(element)}`, {
             headers: {"x-admin-token": localStorage.getItem("adminToken")},
             method: "DELETE"
             })
